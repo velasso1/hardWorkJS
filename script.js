@@ -19,3 +19,8 @@ console.log(count);
 count = count ** 3;
 console.log(count);
 
+// 4. выводим первые два числа 
+count = count.toString();
+console.log(count[0] + count[1]);
+
+
