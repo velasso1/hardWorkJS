@@ -2,28 +2,32 @@
 
 let lang = 'ru';
 
+const weekDaysRu = 'Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье';
+const weekDaysEn = 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday';
+const error = 'Вы выбрали неверное значение';
+
 // Ex. 1
 
 // a)
 if (lang == 'ru') {
-    console.log('Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+    console.log(weekDaysRu);
 } else if (lang == 'en') {
-    console.log('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
+    console.log(weekDaysEn);
 } else {
-    console.log('Вы выбрали неверное значение');
+    console.log(error);
 }
 
 // b)
 switch (true) {
     case lang === 'ru':
-        console.log('Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+        console.log(weekDaysRu);
         break;
 
     case lang === 'en':
-        console.log('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
+        console.log(weekDaysEn);
         break;
     default:
-        console.log('Вы выбрали неверное значение');
+        console.log(error);
 }
 
 // c)
