@@ -32,8 +32,8 @@ switch (true) {
 
 // c)
 
-const ru = ['Понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'];
-const en = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const ru = [weekDaysRu];
+const en = [weekDaysEn];
 const array = [ru, en];
 
 lang === 'ru' ? console.log(ru) : console.log(en);
