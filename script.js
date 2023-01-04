@@ -33,8 +33,7 @@ switch (true) {
 today.innerHTML = `Сегодня: ${days[date.getDay()]}`;
 time.innerHTML = `Текущее время: ${date.toLocaleTimeString('en')}`;
 toNewYear.innerHTML = `До нового года осталось ${Math.floor((newDate - Date.now()) / 86400000)} дней`;
-// console.log(Math.floor((newDate - Date.now()) / 86400000));
-// console.log(Date.now());
+
 
 
 document.body.append(greet);
