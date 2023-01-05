@@ -10,7 +10,7 @@ let date = new Date();
 let hours = date.getHours();
 let minutes = date.getMinutes();
 let sec = date.getSeconds();
-let newDate = new Date(2024, 0, 1);
+let nextYear = new Date((date.getFullYear() + 1), 0, 1);
 
 switch (true) {
     case hours >= 23 || hours < 5:
@@ -32,7 +32,7 @@ switch (true) {
 
 today.innerHTML = `Сегодня: ${days[date.getDay()]}`;
 time.innerHTML = `Текущее время: ${date.toLocaleTimeString('en')}`;
-toNewYear.innerHTML = `До нового года осталось ${Math.floor((newDate - Date.now()) / 86400000)} дней`;
+toNewYear.innerHTML = `До нового года осталось ${Math.floor((nextYear - date) / 1000 / 24 / 3600)} дней`;
 
 
 
@@ -40,4 +40,3 @@ document.body.append(greet);
 document.body.append(today);
 document.body.append(time);
 document.body.append(toNewYear);
-
